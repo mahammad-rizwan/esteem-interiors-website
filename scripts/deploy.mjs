@@ -1,13 +1,17 @@
-// Builds for GitHub Pages and publishes dist/ to the gh-pages branch.
+// Builds the site for GitHub Pages into docs/ (Pages serves main → /docs), then commits and pushes.
 // Usage: npm run deploy
 import { execSync } from 'child_process';
 import fs from 'fs';
-import ghpages from 'gh-pages';
 
 const REPO = 'esteem-interiors-website';
-execSync('npx vite build', { stdio: 'inherit', env: { ...process.env, BASE_PATH: `/${REPO}/` } });
-fs.writeFileSync('dist/.nojekyll', '');
+const run = (cmd, env) => execSync(cmd, { stdio: 'inherit', env: { ...process.env, ...env } });
+
+run('npx vite build --outDir docs --emptyOutDir', { BASE_PATH: `/${REPO}/` });
+fs.writeFileSync('docs/.nojekyll', '');
 // Client-side routes (/about, /projects/…) fall back to the app.
-fs.copyFileSync('dist/index.html', 'dist/404.html');
-await ghpages.publish('dist', { dotfiles: true, message: 'Deploy site' });
+fs.copyFileSync('docs/index.html', 'docs/404.html');
+
+run('git add docs');
+try { run('git commit -m "Deploy site"'); } catch { console.log('No changes to deploy.'); }
+run('git push origin HEAD:main');
 console.log(`Published → https://mahammad-rizwan.github.io/${REPO}/`);
