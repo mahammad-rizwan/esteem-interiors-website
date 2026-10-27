@@ -1,0 +1,990 @@
+{
+ "pizza-hsr": [
+  {
+   "n": 1,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/1. Pizza Bakery HSR/Videos/IMG_8300.MOV",
+   "dur": 5.7,
+   "rot": 0
+  },
+  {
+   "n": 2,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/1. Pizza Bakery HSR/Videos/IMG_8301.MOV",
+   "dur": 1.4,
+   "rot": 0
+  },
+  {
+   "n": 3,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/1. Pizza Bakery HSR/Videos/IMG_8302.MOV",
+   "dur": 8.7,
+   "rot": 0
+  },
+  {
+   "n": 4,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/1. Pizza Bakery HSR/Videos/IMG_8303.MOV",
+   "dur": 6.3,
+   "rot": 0
+  },
+  {
+   "n": 5,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/1. Pizza Bakery HSR/Videos/IMG_8304.MOV",
+   "dur": 4.9,
+   "rot": 0
+  },
+  {
+   "n": 6,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/1. Pizza Bakery HSR/Videos/IMG_8305.MOV",
+   "dur": 7,
+   "rot": 0
+  },
+  {
+   "n": 7,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/1. Pizza Bakery HSR/Videos/IMG_8306.MOV",
+   "dur": 3.4,
+   "rot": 0
+  },
+  {
+   "n": 8,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/1. Pizza Bakery HSR/Videos/IMG_8307.MOV",
+   "dur": 2.5,
+   "rot": 0
+  },
+  {
+   "n": 9,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/1. Pizza Bakery HSR/Videos/IMG_8308.MOV",
+   "dur": 2,
+   "rot": 0
+  },
+  {
+   "n": 10,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/1. Pizza Bakery HSR/Videos/IMG_8309.MOV",
+   "dur": 4.1,
+   "rot": 0
+  },
+  {
+   "n": 11,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/1. Pizza Bakery HSR/Videos/IMG_8310.MOV",
+   "dur": 2.2,
+   "rot": 0
+  },
+  {
+   "n": 12,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/1. Pizza Bakery HSR/Videos/IMG_8311.MOV",
+   "dur": 3.8,
+   "rot": 0
+  },
+  {
+   "n": 13,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/1. Pizza Bakery HSR/Videos/IMG_8312.MOV",
+   "dur": 2.7,
+   "rot": 0
+  },
+  {
+   "n": 14,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/1. Pizza Bakery HSR/Videos/IMG_8313.MOV",
+   "dur": 6.1,
+   "rot": 0
+  },
+  {
+   "n": 15,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/1. Pizza Bakery HSR/Videos/IMG_8314.MOV",
+   "dur": 1.9,
+   "rot": 0
+  },
+  {
+   "n": 16,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/1. Pizza Bakery HSR/Videos/IMG_8315.MOV",
+   "dur": 4.2,
+   "rot": 0
+  },
+  {
+   "n": 17,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/1. Pizza Bakery HSR/Videos/IMG_8316.MOV",
+   "dur": 3.6,
+   "rot": 0
+  },
+  {
+   "n": 18,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/1. Pizza Bakery HSR/Videos/IMG_8318.MOV",
+   "dur": 2.5,
+   "rot": 0
+  },
+  {
+   "n": 19,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/1. Pizza Bakery HSR/Videos/IMG_8319.MOV",
+   "dur": 2.3,
+   "rot": 0
+  },
+  {
+   "n": 20,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/1. Pizza Bakery HSR/Videos/IMG_8320.MOV",
+   "dur": 5,
+   "rot": 0
+  },
+  {
+   "n": 21,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/1. Pizza Bakery HSR/Videos/IMG_8321.MOV",
+   "dur": 6.1,
+   "rot": 0
+  },
+  {
+   "n": 22,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/1. Pizza Bakery HSR/Videos/IMG_8322.MOV",
+   "dur": 0.8,
+   "rot": 0
+  },
+  {
+   "n": 23,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/1. Pizza Bakery HSR/Videos/IMG_8323.MOV",
+   "dur": 4,
+   "rot": 0
+  },
+  {
+   "n": 24,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/1. Pizza Bakery HSR/Videos/IMG_8324.MOV",
+   "dur": 5.4,
+   "rot": 0
+  },
+  {
+   "n": 25,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/1. Pizza Bakery HSR/Videos/IMG_8325.MOV",
+   "dur": 6.8,
+   "rot": 0
+  },
+  {
+   "n": 26,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/1. Pizza Bakery HSR/Videos/IMG_8326.MOV",
+   "dur": 10.2,
+   "rot": 0
+  },
+  {
+   "n": 27,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/1. Pizza Bakery HSR/Videos/IMG_8327.MOV",
+   "dur": 7.7,
+   "rot": 0
+  },
+  {
+   "n": 28,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/1. Pizza Bakery HSR/Videos/IMG_8329.MOV",
+   "dur": 3.7,
+   "rot": 0
+  },
+  {
+   "n": 29,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/1. Pizza Bakery HSR/Videos/IMG_8330.MOV",
+   "dur": 2.6,
+   "rot": 0
+  },
+  {
+   "n": 30,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/1. Pizza Bakery HSR/Videos/IMG_8331.MOV",
+   "dur": 2.6,
+   "rot": 0
+  },
+  {
+   "n": 31,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/1. Pizza Bakery HSR/Videos/IMG_8332.MOV",
+   "dur": 3.2,
+   "rot": 0
+  },
+  {
+   "n": 32,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/1. Pizza Bakery HSR/Videos/IMG_8333.MOV",
+   "dur": 3.2,
+   "rot": 0
+  },
+  {
+   "n": 33,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/1. Pizza Bakery HSR/Videos/IMG_8334.MOV",
+   "dur": 3.5,
+   "rot": 0
+  },
+  {
+   "n": 34,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/1. Pizza Bakery HSR/Videos/IMG_8335.MOV",
+   "dur": 2.5,
+   "rot": 0
+  },
+  {
+   "n": 35,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/1. Pizza Bakery HSR/Videos/IMG_8336.MOV",
+   "dur": 2.5,
+   "rot": 0
+  },
+  {
+   "n": 36,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/1. Pizza Bakery HSR/Videos/IMG_8337.MOV",
+   "dur": 2.2,
+   "rot": 0
+  },
+  {
+   "n": 37,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/1. Pizza Bakery HSR/Videos/IMG_8338.MOV",
+   "dur": 3.9,
+   "rot": 0
+  },
+  {
+   "n": 38,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/1. Pizza Bakery HSR/Videos/IMG_8339.MOV",
+   "dur": 3,
+   "rot": 0
+  },
+  {
+   "n": 39,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/1. Pizza Bakery HSR/Videos/IMG_8340.MOV",
+   "dur": 4.3,
+   "rot": 0
+  },
+  {
+   "n": 40,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/1. Pizza Bakery HSR/Videos/IMG_8341.MOV",
+   "dur": 4,
+   "rot": 0
+  },
+  {
+   "n": 41,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/1. Pizza Bakery HSR/Videos/IMG_8342.MOV",
+   "dur": 2.3,
+   "rot": 0
+  },
+  {
+   "n": 42,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/1. Pizza Bakery HSR/Videos/IMG_8343.MOV",
+   "dur": 1.3,
+   "rot": 0
+  },
+  {
+   "n": 43,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/1. Pizza Bakery HSR/Videos/IMG_8344.MOV",
+   "dur": 6.7,
+   "rot": 0
+  },
+  {
+   "n": 44,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/1. Pizza Bakery HSR/Videos/IMG_8345.MOV",
+   "dur": 4.6,
+   "rot": 0
+  }
+ ],
+ "pizza-koramangala": [
+  {
+   "n": 1,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/2. Pizza Bakery Koramangala-20260202T110804Z-3-001/Pizza Bakery Koramangala/Videos/IMG_8277.MOV",
+   "dur": 5.2,
+   "rot": 0
+  },
+  {
+   "n": 2,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/2. Pizza Bakery Koramangala-20260202T110804Z-3-001/Pizza Bakery Koramangala/Videos/IMG_8277(1).MOV",
+   "dur": 5.2,
+   "rot": 0
+  },
+  {
+   "n": 3,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/2. Pizza Bakery Koramangala-20260202T110804Z-3-001/Pizza Bakery Koramangala/Videos/IMG_8278.MOV",
+   "dur": 6,
+   "rot": 0
+  },
+  {
+   "n": 4,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/2. Pizza Bakery Koramangala-20260202T110804Z-3-001/Pizza Bakery Koramangala/Videos/IMG_8278(1).MOV",
+   "dur": 6,
+   "rot": 0
+  },
+  {
+   "n": 5,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/2. Pizza Bakery Koramangala-20260202T110804Z-3-001/Pizza Bakery Koramangala/Videos/IMG_8279.MOV",
+   "dur": 1,
+   "rot": 0
+  },
+  {
+   "n": 6,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/2. Pizza Bakery Koramangala-20260202T110804Z-3-001/Pizza Bakery Koramangala/Videos/IMG_8279(1).MOV",
+   "dur": 1,
+   "rot": 0
+  },
+  {
+   "n": 7,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/2. Pizza Bakery Koramangala-20260202T110804Z-3-001/Pizza Bakery Koramangala/Videos/IMG_8280.MOV",
+   "dur": 3.1,
+   "rot": 0
+  },
+  {
+   "n": 8,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/2. Pizza Bakery Koramangala-20260202T110804Z-3-001/Pizza Bakery Koramangala/Videos/IMG_8280(1).MOV",
+   "dur": 3.1,
+   "rot": 0
+  },
+  {
+   "n": 9,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/2. Pizza Bakery Koramangala-20260202T110804Z-3-001/Pizza Bakery Koramangala/Videos/IMG_8281.MOV",
+   "dur": 3.1,
+   "rot": 0
+  },
+  {
+   "n": 10,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/2. Pizza Bakery Koramangala-20260202T110804Z-3-001/Pizza Bakery Koramangala/Videos/IMG_8281(1).MOV",
+   "dur": 3.1,
+   "rot": 0
+  },
+  {
+   "n": 11,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/2. Pizza Bakery Koramangala-20260202T110804Z-3-001/Pizza Bakery Koramangala/Videos/IMG_8282.MOV",
+   "dur": 3.2,
+   "rot": 0
+  },
+  {
+   "n": 12,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/2. Pizza Bakery Koramangala-20260202T110804Z-3-001/Pizza Bakery Koramangala/Videos/IMG_8282(1).MOV",
+   "dur": 3.2,
+   "rot": 0
+  },
+  {
+   "n": 13,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/2. Pizza Bakery Koramangala-20260202T110804Z-3-001/Pizza Bakery Koramangala/Videos/IMG_8283.MOV",
+   "dur": 2,
+   "rot": 0
+  },
+  {
+   "n": 14,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/2. Pizza Bakery Koramangala-20260202T110804Z-3-001/Pizza Bakery Koramangala/Videos/IMG_8283(1).MOV",
+   "dur": 2,
+   "rot": 0
+  },
+  {
+   "n": 15,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/2. Pizza Bakery Koramangala-20260202T110804Z-3-001/Pizza Bakery Koramangala/Videos/IMG_8284.MOV",
+   "dur": 2,
+   "rot": 0
+  },
+  {
+   "n": 16,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/2. Pizza Bakery Koramangala-20260202T110804Z-3-001/Pizza Bakery Koramangala/Videos/IMG_8284(1).MOV",
+   "dur": 2,
+   "rot": 0
+  },
+  {
+   "n": 17,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/2. Pizza Bakery Koramangala-20260202T110804Z-3-001/Pizza Bakery Koramangala/Videos/IMG_8285.MOV",
+   "dur": 4,
+   "rot": 0
+  },
+  {
+   "n": 18,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/2. Pizza Bakery Koramangala-20260202T110804Z-3-001/Pizza Bakery Koramangala/Videos/IMG_8285(1).MOV",
+   "dur": 4,
+   "rot": 0
+  },
+  {
+   "n": 19,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/2. Pizza Bakery Koramangala-20260202T110804Z-3-001/Pizza Bakery Koramangala/Videos/IMG_8286.MOV",
+   "dur": 4.6,
+   "rot": 0
+  },
+  {
+   "n": 20,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/2. Pizza Bakery Koramangala-20260202T110804Z-3-001/Pizza Bakery Koramangala/Videos/IMG_8286(1).MOV",
+   "dur": 4.6,
+   "rot": 0
+  },
+  {
+   "n": 21,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/2. Pizza Bakery Koramangala-20260202T110804Z-3-001/Pizza Bakery Koramangala/Videos/IMG_8287.MOV",
+   "dur": 5.6,
+   "rot": 0
+  },
+  {
+   "n": 22,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/2. Pizza Bakery Koramangala-20260202T110804Z-3-001/Pizza Bakery Koramangala/Videos/IMG_8287(1).MOV",
+   "dur": 5.6,
+   "rot": 0
+  },
+  {
+   "n": 23,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/2. Pizza Bakery Koramangala-20260202T110804Z-3-001/Pizza Bakery Koramangala/Videos/IMG_8288.MOV",
+   "dur": 1.8,
+   "rot": 0
+  },
+  {
+   "n": 24,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/2. Pizza Bakery Koramangala-20260202T110804Z-3-001/Pizza Bakery Koramangala/Videos/IMG_8288(1).MOV",
+   "dur": 1.8,
+   "rot": 0
+  },
+  {
+   "n": 25,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/2. Pizza Bakery Koramangala-20260202T110804Z-3-001/Pizza Bakery Koramangala/Videos/IMG_8289.MOV",
+   "dur": 7,
+   "rot": 0
+  },
+  {
+   "n": 26,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/2. Pizza Bakery Koramangala-20260202T110804Z-3-001/Pizza Bakery Koramangala/Videos/IMG_8289(1).MOV",
+   "dur": 7,
+   "rot": 0
+  },
+  {
+   "n": 27,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/2. Pizza Bakery Koramangala-20260202T110804Z-3-001/Pizza Bakery Koramangala/Videos/IMG_8290.MOV",
+   "dur": 2,
+   "rot": 0
+  },
+  {
+   "n": 28,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/2. Pizza Bakery Koramangala-20260202T110804Z-3-001/Pizza Bakery Koramangala/Videos/IMG_8290(1).MOV",
+   "dur": 2,
+   "rot": 0
+  },
+  {
+   "n": 29,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/2. Pizza Bakery Koramangala-20260202T110804Z-3-001/Pizza Bakery Koramangala/Videos/IMG_8291.MOV",
+   "dur": 3.8,
+   "rot": 0
+  },
+  {
+   "n": 30,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/2. Pizza Bakery Koramangala-20260202T110804Z-3-001/Pizza Bakery Koramangala/Videos/IMG_8291(1).MOV",
+   "dur": 3.8,
+   "rot": 0
+  },
+  {
+   "n": 31,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/2. Pizza Bakery Koramangala-20260202T110804Z-3-001/Pizza Bakery Koramangala/Videos/IMG_8292.MOV",
+   "dur": 2.7,
+   "rot": 0
+  },
+  {
+   "n": 32,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/2. Pizza Bakery Koramangala-20260202T110804Z-3-001/Pizza Bakery Koramangala/Videos/IMG_8292(1).MOV",
+   "dur": 2.7,
+   "rot": 0
+  },
+  {
+   "n": 33,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/2. Pizza Bakery Koramangala-20260202T110804Z-3-001/Pizza Bakery Koramangala/Videos/IMG_8293.MOV",
+   "dur": 3.2,
+   "rot": 0
+  },
+  {
+   "n": 34,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/2. Pizza Bakery Koramangala-20260202T110804Z-3-001/Pizza Bakery Koramangala/Videos/IMG_8293(1).MOV",
+   "dur": 3.2,
+   "rot": 0
+  },
+  {
+   "n": 35,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/2. Pizza Bakery Koramangala-20260202T110804Z-3-001/Pizza Bakery Koramangala/Videos/IMG_8294.MOV",
+   "dur": 3.5,
+   "rot": 0
+  },
+  {
+   "n": 36,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/2. Pizza Bakery Koramangala-20260202T110804Z-3-001/Pizza Bakery Koramangala/Videos/IMG_8294(1).MOV",
+   "dur": 3.5,
+   "rot": 0
+  },
+  {
+   "n": 37,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/2. Pizza Bakery Koramangala-20260202T110804Z-3-001/Pizza Bakery Koramangala/Videos/IMG_8295.MOV",
+   "dur": 1.8,
+   "rot": 0
+  },
+  {
+   "n": 38,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/2. Pizza Bakery Koramangala-20260202T110804Z-3-001/Pizza Bakery Koramangala/Videos/IMG_8295(1).MOV",
+   "dur": 1.8,
+   "rot": 0
+  },
+  {
+   "n": 39,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/2. Pizza Bakery Koramangala-20260202T110804Z-3-001/Pizza Bakery Koramangala/Videos/IMG_8296.MOV",
+   "dur": 9.7,
+   "rot": 0
+  },
+  {
+   "n": 40,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/2. Pizza Bakery Koramangala-20260202T110804Z-3-001/Pizza Bakery Koramangala/Videos/IMG_8296(1).MOV",
+   "dur": 9.7,
+   "rot": 0
+  },
+  {
+   "n": 41,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/2. Pizza Bakery Koramangala-20260202T110804Z-3-001/Pizza Bakery Koramangala/Videos/IMG_8299.MOV",
+   "dur": 6.6,
+   "rot": 0
+  },
+  {
+   "n": 42,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/2. Pizza Bakery Koramangala-20260202T110804Z-3-001/Pizza Bakery Koramangala/Videos/IMG_8299(1).MOV",
+   "dur": 6.6,
+   "rot": 0
+  }
+ ],
+ "hyundai-rajajinagar": [
+  {
+   "n": 1,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/3. Blue hyundai Rajajinagar-20260202T092632Z-3-001/Blue hyundai Rajajinagar/Videos/IMG_8176.MOV",
+   "dur": 5.7,
+   "rot": 0
+  },
+  {
+   "n": 2,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/3. Blue hyundai Rajajinagar-20260202T092632Z-3-001/Blue hyundai Rajajinagar/Videos/IMG_8178.MOV",
+   "dur": 7.2,
+   "rot": 0
+  },
+  {
+   "n": 3,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/3. Blue hyundai Rajajinagar-20260202T092632Z-3-001/Blue hyundai Rajajinagar/Videos/IMG_8179.MOV",
+   "dur": 5.8,
+   "rot": 0
+  },
+  {
+   "n": 4,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/3. Blue hyundai Rajajinagar-20260202T092632Z-3-001/Blue hyundai Rajajinagar/Videos/IMG_8180.MOV",
+   "dur": 5.7,
+   "rot": 0
+  },
+  {
+   "n": 5,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/3. Blue hyundai Rajajinagar-20260202T092632Z-3-001/Blue hyundai Rajajinagar/Videos/IMG_8181.MOV",
+   "dur": 3.9,
+   "rot": 0
+  },
+  {
+   "n": 6,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/3. Blue hyundai Rajajinagar-20260202T092632Z-3-001/Blue hyundai Rajajinagar/Videos/IMG_8182.MOV",
+   "dur": 2.3,
+   "rot": 0
+  },
+  {
+   "n": 7,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/3. Blue hyundai Rajajinagar-20260202T092632Z-3-001/Blue hyundai Rajajinagar/Videos/IMG_8183.MOV",
+   "dur": 2.8,
+   "rot": 0
+  },
+  {
+   "n": 8,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/3. Blue hyundai Rajajinagar-20260202T092632Z-3-001/Blue hyundai Rajajinagar/Videos/IMG_8184.MOV",
+   "dur": 4.4,
+   "rot": 0
+  },
+  {
+   "n": 9,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/3. Blue hyundai Rajajinagar-20260202T092632Z-3-001/Blue hyundai Rajajinagar/Videos/IMG_8185.MOV",
+   "dur": 2.8,
+   "rot": 0
+  },
+  {
+   "n": 10,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/3. Blue hyundai Rajajinagar-20260202T092632Z-3-001/Blue hyundai Rajajinagar/Videos/IMG_8186.MOV",
+   "dur": 4.5,
+   "rot": 0
+  },
+  {
+   "n": 11,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/3. Blue hyundai Rajajinagar-20260202T092632Z-3-001/Blue hyundai Rajajinagar/Videos/IMG_8187.MOV",
+   "dur": 6.1,
+   "rot": 0
+  },
+  {
+   "n": 12,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/3. Blue hyundai Rajajinagar-20260202T092632Z-3-001/Blue hyundai Rajajinagar/Videos/IMG_8188.MOV",
+   "dur": 4.2,
+   "rot": 0
+  },
+  {
+   "n": 13,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/3. Blue hyundai Rajajinagar-20260202T092632Z-3-001/Blue hyundai Rajajinagar/Videos/IMG_8189.MOV",
+   "dur": 3.8,
+   "rot": 0
+  },
+  {
+   "n": 14,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/3. Blue hyundai Rajajinagar-20260202T092632Z-3-001/Blue hyundai Rajajinagar/Videos/IMG_8190.MOV",
+   "dur": 2.7,
+   "rot": 0
+  },
+  {
+   "n": 15,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/3. Blue hyundai Rajajinagar-20260202T092632Z-3-001/Blue hyundai Rajajinagar/Videos/IMG_8191.MOV",
+   "dur": 5.6,
+   "rot": 0
+  },
+  {
+   "n": 16,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/3. Blue hyundai Rajajinagar-20260202T092632Z-3-001/Blue hyundai Rajajinagar/Videos/IMG_8192.MOV",
+   "dur": 2.3,
+   "rot": 0
+  },
+  {
+   "n": 17,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/3. Blue hyundai Rajajinagar-20260202T092632Z-3-001/Blue hyundai Rajajinagar/Videos/IMG_8194.MOV",
+   "dur": 2.3,
+   "rot": 0
+  },
+  {
+   "n": 18,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/3. Blue hyundai Rajajinagar-20260202T092632Z-3-001/Blue hyundai Rajajinagar/Videos/IMG_8195.MOV",
+   "dur": 5.3,
+   "rot": 0
+  },
+  {
+   "n": 19,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/3. Blue hyundai Rajajinagar-20260202T092632Z-3-001/Blue hyundai Rajajinagar/Videos/IMG_8196.MOV",
+   "dur": 8.1,
+   "rot": 0
+  },
+  {
+   "n": 20,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/3. Blue hyundai Rajajinagar-20260202T092632Z-3-001/Blue hyundai Rajajinagar/Videos/IMG_8197.MOV",
+   "dur": 2.4,
+   "rot": 0
+  },
+  {
+   "n": 21,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/3. Blue hyundai Rajajinagar-20260202T092632Z-3-001/Blue hyundai Rajajinagar/Videos/IMG_8198.MOV",
+   "dur": 3.1,
+   "rot": 0
+  },
+  {
+   "n": 22,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/3. Blue hyundai Rajajinagar-20260202T092632Z-3-001/Blue hyundai Rajajinagar/Videos/IMG_8201.MOV",
+   "dur": 2.5,
+   "rot": 0
+  },
+  {
+   "n": 23,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/3. Blue hyundai Rajajinagar-20260202T092632Z-3-001/Blue hyundai Rajajinagar/Videos/IMG_8202.MOV",
+   "dur": 4.4,
+   "rot": 0
+  },
+  {
+   "n": 24,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/3. Blue hyundai Rajajinagar-20260202T092632Z-3-001/Blue hyundai Rajajinagar/Videos/IMG_8203.MOV",
+   "dur": 1.8,
+   "rot": -90
+  },
+  {
+   "n": 25,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/3. Blue hyundai Rajajinagar-20260202T092632Z-3-001/Blue hyundai Rajajinagar/Videos/IMG_8206.MOV",
+   "dur": 6,
+   "rot": 0
+  },
+  {
+   "n": 26,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/3. Blue hyundai Rajajinagar-20260202T092632Z-3-001/Blue hyundai Rajajinagar/Videos/IMG_8207.MOV",
+   "dur": 6.6,
+   "rot": 0
+  },
+  {
+   "n": 27,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/3. Blue hyundai Rajajinagar-20260202T092632Z-3-001/Blue hyundai Rajajinagar/Videos/IMG_8209.MOV",
+   "dur": 7.9,
+   "rot": 0
+  },
+  {
+   "n": 28,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/3. Blue hyundai Rajajinagar-20260202T092632Z-3-001/Blue hyundai Rajajinagar/Videos/IMG_8210.MOV",
+   "dur": 8.1,
+   "rot": 0
+  }
+ ],
+ "hyundai-service": [
+  {
+   "n": 1,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/4. Blue hyndai service Rajajinagar-20260202T092623Z-3-001/Blue hyndai service Rajajinagar/Videos/IMG_8211.MOV",
+   "dur": 2,
+   "rot": 0
+  },
+  {
+   "n": 2,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/4. Blue hyndai service Rajajinagar-20260202T092623Z-3-001/Blue hyndai service Rajajinagar/Videos/IMG_8212.MOV",
+   "dur": 4.3,
+   "rot": 0
+  },
+  {
+   "n": 3,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/4. Blue hyndai service Rajajinagar-20260202T092623Z-3-001/Blue hyndai service Rajajinagar/Videos/IMG_8213.MOV",
+   "dur": 2.3,
+   "rot": 0
+  },
+  {
+   "n": 4,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/4. Blue hyndai service Rajajinagar-20260202T092623Z-3-001/Blue hyndai service Rajajinagar/Videos/IMG_8214.MOV",
+   "dur": 2.4,
+   "rot": 0
+  },
+  {
+   "n": 5,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/4. Blue hyndai service Rajajinagar-20260202T092623Z-3-001/Blue hyndai service Rajajinagar/Videos/IMG_8216.MOV",
+   "dur": 3,
+   "rot": 0
+  },
+  {
+   "n": 6,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/4. Blue hyndai service Rajajinagar-20260202T092623Z-3-001/Blue hyndai service Rajajinagar/Videos/IMG_8217.MOV",
+   "dur": 9.8,
+   "rot": 0
+  },
+  {
+   "n": 7,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/4. Blue hyndai service Rajajinagar-20260202T092623Z-3-001/Blue hyndai service Rajajinagar/Videos/IMG_8218.MOV",
+   "dur": 6.6,
+   "rot": 0
+  },
+  {
+   "n": 8,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/4. Blue hyndai service Rajajinagar-20260202T092623Z-3-001/Blue hyndai service Rajajinagar/Videos/IMG_8219.MOV",
+   "dur": 4.6,
+   "rot": 0
+  }
+ ],
+ "hyundai-hesarghatta": [
+  {
+   "n": 1,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/5. Blue Hyundai Hesarghatta-20260202T092625Z-3-001/Blue Hyundai Hesarghatta/IMG_8222.MOV",
+   "dur": 5.2,
+   "rot": 0
+  },
+  {
+   "n": 2,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/5. Blue Hyundai Hesarghatta-20260202T092625Z-3-001/Blue Hyundai Hesarghatta/IMG_8223.MOV",
+   "dur": 10.1,
+   "rot": 0
+  },
+  {
+   "n": 3,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/5. Blue Hyundai Hesarghatta-20260202T092625Z-3-001/Blue Hyundai Hesarghatta/IMG_8225.MOV",
+   "dur": 2.9,
+   "rot": 0
+  },
+  {
+   "n": 4,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/5. Blue Hyundai Hesarghatta-20260202T092625Z-3-001/Blue Hyundai Hesarghatta/IMG_8226.MOV",
+   "dur": 5.9,
+   "rot": 0
+  },
+  {
+   "n": 5,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/5. Blue Hyundai Hesarghatta-20260202T092625Z-3-001/Blue Hyundai Hesarghatta/IMG_8227.MOV",
+   "dur": 1.2,
+   "rot": 0
+  },
+  {
+   "n": 6,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/5. Blue Hyundai Hesarghatta-20260202T092625Z-3-001/Blue Hyundai Hesarghatta/IMG_8229.MOV",
+   "dur": 5.3,
+   "rot": 0
+  },
+  {
+   "n": 7,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/5. Blue Hyundai Hesarghatta-20260202T092625Z-3-001/Blue Hyundai Hesarghatta/IMG_8230.MOV",
+   "dur": 4.8,
+   "rot": 0
+  },
+  {
+   "n": 8,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/5. Blue Hyundai Hesarghatta-20260202T092625Z-3-001/Blue Hyundai Hesarghatta/IMG_8231.MOV",
+   "dur": 7.6,
+   "rot": 0
+  },
+  {
+   "n": 9,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/5. Blue Hyundai Hesarghatta-20260202T092625Z-3-001/Blue Hyundai Hesarghatta/IMG_8232.MOV",
+   "dur": 11.3,
+   "rot": 0
+  },
+  {
+   "n": 10,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/5. Blue Hyundai Hesarghatta-20260202T092625Z-3-001/Blue Hyundai Hesarghatta/IMG_8233.MOV",
+   "dur": 2.2,
+   "rot": 0
+  },
+  {
+   "n": 11,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/5. Blue Hyundai Hesarghatta-20260202T092625Z-3-001/Blue Hyundai Hesarghatta/IMG_8234.MOV",
+   "dur": 1.4,
+   "rot": 0
+  },
+  {
+   "n": 12,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/5. Blue Hyundai Hesarghatta-20260202T092625Z-3-001/Blue Hyundai Hesarghatta/IMG_8238.MOV",
+   "dur": 2.2,
+   "rot": 0
+  },
+  {
+   "n": 13,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/5. Blue Hyundai Hesarghatta-20260202T092625Z-3-001/Blue Hyundai Hesarghatta/IMG_8240.MOV",
+   "dur": 3.1,
+   "rot": 0
+  },
+  {
+   "n": 14,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/5. Blue Hyundai Hesarghatta-20260202T092625Z-3-001/Blue Hyundai Hesarghatta/IMG_8241.MOV",
+   "dur": 1.2,
+   "rot": 0
+  },
+  {
+   "n": 15,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/5. Blue Hyundai Hesarghatta-20260202T092625Z-3-001/Blue Hyundai Hesarghatta/IMG_8242.MOV",
+   "dur": 1.8,
+   "rot": 0
+  },
+  {
+   "n": 16,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/5. Blue Hyundai Hesarghatta-20260202T092625Z-3-001/Blue Hyundai Hesarghatta/IMG_8243.MOV",
+   "dur": 2.6,
+   "rot": 0
+  },
+  {
+   "n": 17,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/5. Blue Hyundai Hesarghatta-20260202T092625Z-3-001/Blue Hyundai Hesarghatta/IMG_8244.MOV",
+   "dur": 2.2,
+   "rot": 0
+  },
+  {
+   "n": 18,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/5. Blue Hyundai Hesarghatta-20260202T092625Z-3-001/Blue Hyundai Hesarghatta/IMG_8245.MOV",
+   "dur": 2.7,
+   "rot": 0
+  },
+  {
+   "n": 19,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/5. Blue Hyundai Hesarghatta-20260202T092625Z-3-001/Blue Hyundai Hesarghatta/IMG_8246.MOV",
+   "dur": 5.4,
+   "rot": 0
+  },
+  {
+   "n": 20,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/5. Blue Hyundai Hesarghatta-20260202T092625Z-3-001/Blue Hyundai Hesarghatta/IMG_8247.MOV",
+   "dur": 1.7,
+   "rot": 0
+  },
+  {
+   "n": 21,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/5. Blue Hyundai Hesarghatta-20260202T092625Z-3-001/Blue Hyundai Hesarghatta/IMG_8248.MOV",
+   "dur": 4,
+   "rot": 0
+  },
+  {
+   "n": 22,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/5. Blue Hyundai Hesarghatta-20260202T092625Z-3-001/Blue Hyundai Hesarghatta/IMG_8249.MOV",
+   "dur": 3.1,
+   "rot": 0
+  },
+  {
+   "n": 23,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/5. Blue Hyundai Hesarghatta-20260202T092625Z-3-001/Blue Hyundai Hesarghatta/IMG_8250.MOV",
+   "dur": 3.9,
+   "rot": 0
+  },
+  {
+   "n": 24,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/5. Blue Hyundai Hesarghatta-20260202T092625Z-3-001/Blue Hyundai Hesarghatta/IMG_8251.MOV",
+   "dur": 2.5,
+   "rot": 0
+  },
+  {
+   "n": 25,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/5. Blue Hyundai Hesarghatta-20260202T092625Z-3-001/Blue Hyundai Hesarghatta/IMG_8252.MOV",
+   "dur": 4.4,
+   "rot": 0
+  },
+  {
+   "n": 26,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/5. Blue Hyundai Hesarghatta-20260202T092625Z-3-001/Blue Hyundai Hesarghatta/IMG_8253.MOV",
+   "dur": 2.7,
+   "rot": 0
+  },
+  {
+   "n": 27,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/5. Blue Hyundai Hesarghatta-20260202T092625Z-3-001/Blue Hyundai Hesarghatta/IMG_8254.MOV",
+   "dur": 1.6,
+   "rot": 0
+  },
+  {
+   "n": 28,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/5. Blue Hyundai Hesarghatta-20260202T092625Z-3-001/Blue Hyundai Hesarghatta/IMG_8255.MOV",
+   "dur": 1.4,
+   "rot": 0
+  },
+  {
+   "n": 29,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/5. Blue Hyundai Hesarghatta-20260202T092625Z-3-001/Blue Hyundai Hesarghatta/IMG_8256.MOV",
+   "dur": 4.8,
+   "rot": 0
+  },
+  {
+   "n": 30,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/5. Blue Hyundai Hesarghatta-20260202T092625Z-3-001/Blue Hyundai Hesarghatta/IMG_8257.MOV",
+   "dur": 4.3,
+   "rot": 0
+  },
+  {
+   "n": 31,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/5. Blue Hyundai Hesarghatta-20260202T092625Z-3-001/Blue Hyundai Hesarghatta/IMG_8258.MOV",
+   "dur": 3,
+   "rot": 0
+  },
+  {
+   "n": 32,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/5. Blue Hyundai Hesarghatta-20260202T092625Z-3-001/Blue Hyundai Hesarghatta/IMG_8259.MOV",
+   "dur": 2.8,
+   "rot": 0
+  },
+  {
+   "n": 33,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/5. Blue Hyundai Hesarghatta-20260202T092625Z-3-001/Blue Hyundai Hesarghatta/IMG_8260.MOV",
+   "dur": 3.4,
+   "rot": 0
+  },
+  {
+   "n": 34,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/5. Blue Hyundai Hesarghatta-20260202T092625Z-3-001/Blue Hyundai Hesarghatta/IMG_8261.MOV",
+   "dur": 6.8,
+   "rot": 0
+  },
+  {
+   "n": 35,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/5. Blue Hyundai Hesarghatta-20260202T092625Z-3-001/Blue Hyundai Hesarghatta/IMG_8263.MOV",
+   "dur": 2,
+   "rot": 0
+  },
+  {
+   "n": 36,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/5. Blue Hyundai Hesarghatta-20260202T092625Z-3-001/Blue Hyundai Hesarghatta/IMG_8267.MOV",
+   "dur": 6.7,
+   "rot": 0
+  },
+  {
+   "n": 37,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/5. Blue Hyundai Hesarghatta-20260202T092625Z-3-001/Blue Hyundai Hesarghatta/IMG_8268.MOV",
+   "dur": 4.9,
+   "rot": 0
+  },
+  {
+   "n": 38,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/5. Blue Hyundai Hesarghatta-20260202T092625Z-3-001/Blue Hyundai Hesarghatta/IMG_8271.MOV",
+   "dur": 2.7,
+   "rot": 0
+  },
+  {
+   "n": 39,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/5. Blue Hyundai Hesarghatta-20260202T092625Z-3-001/Blue Hyundai Hesarghatta/IMG_8272.MOV",
+   "dur": 5.9,
+   "rot": 0
+  },
+  {
+   "n": 40,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/5. Blue Hyundai Hesarghatta-20260202T092625Z-3-001/Blue Hyundai Hesarghatta/IMG_8273.MOV",
+   "dur": 4.8,
+   "rot": 0
+  },
+  {
+   "n": 41,
+   "file": "C:/Users/Rizwan1/Downloads/Resources/5. Blue Hyundai Hesarghatta-20260202T092625Z-3-001/Blue Hyundai Hesarghatta/IMG_8274.MOV",
+   "dur": 4.9,
+   "rot": 0
+  }
+ ]
+}
