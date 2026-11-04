@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Plus, ArrowUpRight, Play, Send, Check } from 'lucide-react';
@@ -51,17 +51,52 @@ export function PageHeader({ eyebrow, title, lead, photo, video }) {
   );
 }
 
-/* Project card with hover video preview. */
+const HOLD_MS = 220; // long enough that a scroll or tap never starts the video
+const MOVE_PX = 10;
+
+/* Project card with a video preview: hover with a mouse, press and hold on touch screens. */
 export function ProjectCard({ project, index = 0, large = false }) {
-  const [hover, setHover] = useState(false);
+  const [playing, setPlaying] = useState(false);
+  const [ready, setReady] = useState(false);
+  const touch = useRef({ timer: null, x: 0, y: 0, active: false, held: false });
   const cover = project.photos[0];
   const clip = project.videos[0];
+
+  const stop = () => {
+    clearTimeout(touch.current.timer);
+    touch.current.active = false;
+    setPlaying(false);
+    setReady(false);
+  };
+  useEffect(() => () => clearTimeout(touch.current.timer), []);
+
+  const handlers = {
+    onPointerEnter: (e) => { if (e.pointerType === 'mouse') setPlaying(true); },
+    onPointerLeave: (e) => { if (e.pointerType === 'mouse') stop(); },
+    onTouchStart: (e) => {
+      const t = e.touches[0];
+      clearTimeout(touch.current.timer);
+      touch.current = { ...touch.current, x: t.clientX, y: t.clientY, active: true, held: false };
+      touch.current.timer = setTimeout(() => { touch.current.held = true; setPlaying(true); }, HOLD_MS);
+    },
+    onTouchMove: (e) => {
+      const t = e.touches[0];
+      if (Math.abs(t.clientX - touch.current.x) > MOVE_PX || Math.abs(t.clientY - touch.current.y) > MOVE_PX) stop();
+    },
+    onTouchEnd: stop,
+    onTouchCancel: stop,
+    // Holding to watch must not bring up the long-press menu or open the project on release.
+    onContextMenu: (e) => { if (touch.current.active) e.preventDefault(); },
+    onClick: (e) => { if (touch.current.held) { e.preventDefault(); touch.current.held = false; } },
+  };
+
   return (
     <Reveal delay={(index % 2) * 0.12} className={`project-card ${large ? 'large' : ''}`}>
-      <Link to={`/projects/${project.id}`} onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)} aria-label={`${project.title}, ${project.location}`}>
+      <Link to={`/projects/${project.id}`} {...handlers} aria-label={`${project.title}, ${project.location}`}>
         <div className="project-card-media">
           <img {...imgProps(cover, large ? '(max-width: 900px) 100vw, 60vw' : '(max-width: 900px) 100vw, 40vw')} alt="" loading="lazy" />
-          {hover && clip && <video className="project-card-video" src={clip.src} muted autoPlay loop playsInline />}
+          {playing && clip && <video className={`project-card-video ${ready ? 'ready' : ''}`} src={clip.src} muted autoPlay loop playsInline onPlaying={() => setReady(true)} />}
+          <span className={`project-card-hold ${playing ? 'off' : ''}`}>Press &amp; hold to preview</span>
           <span className="project-card-badge"><Play size={12} fill="currentColor" /> {project.photos.length} photos · {project.videos.length} films</span>
           <span className="project-card-arrow"><ArrowUpRight size={20} /></span>
         </div>

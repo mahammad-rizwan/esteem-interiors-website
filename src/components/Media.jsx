@@ -4,9 +4,14 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { X, ChevronLeft, ChevronRight, Play } from 'lucide-react';
 import { imgProps } from './ui';
 
+// Upright phones get the sharper 9:16 cut of clips that fill the screen.
+const phonePortrait = () => window.matchMedia('(max-width: 760px) and (orientation: portrait)').matches;
+export const sourceFor = (v) => (v.mobile && phonePortrait() ? { src: v.mobile, poster: v.mobilePoster } : { src: v.src, poster: v.poster });
+
 // Muted looping clip that only plays while it is on screen.
-export function InViewVideo({ video, className = '', label = '' }) {
+export function InViewVideo({ video, className = '', label = '', fill = false }) {
   const ref = useRef(null);
+  const { src, poster } = fill ? sourceFor(video) : video;
   useEffect(() => {
     const el = ref.current;
     if (!el) return undefined;
@@ -17,7 +22,7 @@ export function InViewVideo({ video, className = '', label = '' }) {
     return () => io.disconnect();
   }, []);
   return (
-    <video ref={ref} className={className} src={video.src} poster={video.poster} muted loop playsInline preload="none" aria-label={label} />
+    <video ref={ref} className={className} src={src} poster={poster} muted loop playsInline preload="none" aria-label={label} />
   );
 }
 

@@ -129,70 +129,80 @@ export const MEDIA = {
     "dur": 10.2,
     "w": 1920,
     "h": 1080,
-    "hero": true
+    "hero": true,
+    "mobile": true
    },
    {
     "name": "v02",
     "dur": 8.7,
-    "w": 1280,
-    "h": 720,
-    "hero": false
+    "w": 1920,
+    "h": 1080,
+    "hero": false,
+    "mobile": false
    },
    {
     "name": "v03",
     "dur": 6.3,
-    "w": 1280,
-    "h": 720,
-    "hero": false
+    "w": 1920,
+    "h": 1080,
+    "hero": false,
+    "mobile": false
    },
    {
     "name": "v04",
     "dur": 3.4,
-    "w": 1280,
-    "h": 720,
-    "hero": false
+    "w": 1920,
+    "h": 1080,
+    "hero": false,
+    "mobile": false
    },
    {
     "name": "v05",
     "dur": 4.1,
-    "w": 1280,
-    "h": 720,
-    "hero": false
+    "w": 1920,
+    "h": 1080,
+    "hero": false,
+    "mobile": false
    },
    {
     "name": "v06",
     "dur": 6.1,
-    "w": 1280,
-    "h": 720,
-    "hero": false
+    "w": 1920,
+    "h": 1080,
+    "hero": false,
+    "mobile": false
    },
    {
     "name": "v07",
     "dur": 3.6,
-    "w": 1280,
-    "h": 720,
-    "hero": false
+    "w": 1920,
+    "h": 1080,
+    "hero": false,
+    "mobile": false
    },
    {
     "name": "v08",
     "dur": 6.1,
     "w": 1920,
     "h": 1080,
-    "hero": true
+    "hero": true,
+    "mobile": true
    },
    {
     "name": "v09",
     "dur": 6.8,
-    "w": 1280,
-    "h": 720,
-    "hero": false
+    "w": 1920,
+    "h": 1080,
+    "hero": false,
+    "mobile": false
    },
    {
     "name": "v10",
     "dur": 6.7,
-    "w": 1280,
-    "h": 720,
-    "hero": false
+    "w": 1920,
+    "h": 1080,
+    "hero": false,
+    "mobile": false
    }
   ]
  },
@@ -325,70 +335,80 @@ export const MEDIA = {
     "dur": 5.2,
     "w": 1920,
     "h": 1080,
-    "hero": true
+    "hero": true,
+    "mobile": true
    },
    {
     "name": "v02",
     "dur": 6,
-    "w": 1280,
-    "h": 720,
-    "hero": false
+    "w": 1920,
+    "h": 1080,
+    "hero": false,
+    "mobile": false
    },
    {
     "name": "v03",
     "dur": 3.1,
-    "w": 1280,
-    "h": 720,
-    "hero": false
+    "w": 1920,
+    "h": 1080,
+    "hero": false,
+    "mobile": false
    },
    {
     "name": "v04",
     "dur": 3.2,
     "w": 1920,
     "h": 1080,
-    "hero": true
+    "hero": true,
+    "mobile": true
    },
    {
     "name": "v05",
     "dur": 4,
-    "w": 1280,
-    "h": 720,
-    "hero": false
+    "w": 1920,
+    "h": 1080,
+    "hero": false,
+    "mobile": true
    },
    {
     "name": "v06",
     "dur": 4.6,
-    "w": 1280,
-    "h": 720,
-    "hero": false
+    "w": 1920,
+    "h": 1080,
+    "hero": false,
+    "mobile": false
    },
    {
     "name": "v07",
     "dur": 5.6,
-    "w": 1280,
-    "h": 720,
-    "hero": false
+    "w": 1920,
+    "h": 1080,
+    "hero": false,
+    "mobile": false
    },
    {
     "name": "v08",
     "dur": 3.8,
-    "w": 1280,
-    "h": 720,
-    "hero": false
+    "w": 1920,
+    "h": 1080,
+    "hero": false,
+    "mobile": false
    },
    {
     "name": "v09",
     "dur": 3.2,
-    "w": 1280,
-    "h": 720,
-    "hero": false
+    "w": 1920,
+    "h": 1080,
+    "hero": false,
+    "mobile": false
    },
    {
     "name": "v10",
     "dur": 9.7,
-    "w": 1280,
-    "h": 720,
-    "hero": false
+    "w": 1920,
+    "h": 1080,
+    "hero": false,
+    "mobile": false
    }
   ]
  },
@@ -521,70 +541,80 @@ export const MEDIA = {
     "dur": 8.1,
     "w": 1920,
     "h": 1080,
-    "hero": true
+    "hero": true,
+    "mobile": true
    },
    {
     "name": "v02",
     "dur": 7.2,
-    "w": 1280,
-    "h": 720,
-    "hero": false
+    "w": 1920,
+    "h": 1080,
+    "hero": false,
+    "mobile": false
    },
    {
     "name": "v03",
     "dur": 5.8,
-    "w": 1280,
-    "h": 720,
-    "hero": false
+    "w": 1920,
+    "h": 1080,
+    "hero": false,
+    "mobile": false
    },
    {
     "name": "v04",
     "dur": 3.9,
-    "w": 1280,
-    "h": 720,
-    "hero": false
+    "w": 1920,
+    "h": 1080,
+    "hero": false,
+    "mobile": false
    },
    {
     "name": "v05",
     "dur": 6.1,
-    "w": 1280,
-    "h": 720,
-    "hero": false
+    "w": 1920,
+    "h": 1080,
+    "hero": false,
+    "mobile": false
    },
    {
     "name": "v06",
     "dur": 5.6,
-    "w": 1280,
-    "h": 720,
-    "hero": false
+    "w": 1920,
+    "h": 1080,
+    "hero": false,
+    "mobile": false
    },
    {
     "name": "v07",
     "dur": 3.1,
-    "w": 1280,
-    "h": 720,
-    "hero": false
+    "w": 1920,
+    "h": 1080,
+    "hero": false,
+    "mobile": false
    },
    {
     "name": "v08",
     "dur": 4.4,
-    "w": 1280,
-    "h": 720,
-    "hero": false
+    "w": 1920,
+    "h": 1080,
+    "hero": false,
+    "mobile": false
    },
    {
     "name": "v09",
     "dur": 6.6,
-    "w": 1280,
-    "h": 720,
-    "hero": false
+    "w": 1920,
+    "h": 1080,
+    "hero": false,
+    "mobile": false
    },
    {
     "name": "v10",
     "dur": 8.1,
-    "w": 1280,
-    "h": 720,
-    "hero": false
+    "w": 1920,
+    "h": 1080,
+    "hero": false,
+    "mobile": false
    }
   ]
  },
@@ -661,30 +691,34 @@ export const MEDIA = {
    {
     "name": "v01",
     "dur": 6.6,
-    "w": 1280,
-    "h": 720,
-    "hero": false
+    "w": 1920,
+    "h": 1080,
+    "hero": false,
+    "mobile": true
    },
    {
     "name": "v02",
     "dur": 4.3,
-    "w": 1280,
-    "h": 720,
-    "hero": false
+    "w": 1920,
+    "h": 1080,
+    "hero": false,
+    "mobile": false
    },
    {
     "name": "v03",
     "dur": 9.8,
-    "w": 1280,
-    "h": 720,
-    "hero": false
+    "w": 1920,
+    "h": 1080,
+    "hero": false,
+    "mobile": false
    },
    {
     "name": "v04",
     "dur": 4.6,
-    "w": 1280,
-    "h": 720,
-    "hero": false
+    "w": 1920,
+    "h": 1080,
+    "hero": false,
+    "mobile": false
    }
   ]
  },
@@ -817,70 +851,80 @@ export const MEDIA = {
     "dur": 3.9,
     "w": 1920,
     "h": 1080,
-    "hero": true
+    "hero": true,
+    "mobile": true
    },
    {
     "name": "v02",
     "dur": 10.1,
-    "w": 1280,
-    "h": 720,
-    "hero": false
+    "w": 1920,
+    "h": 1080,
+    "hero": false,
+    "mobile": false
    },
    {
     "name": "v03",
     "dur": 7.6,
-    "w": 1280,
-    "h": 720,
-    "hero": false
+    "w": 1920,
+    "h": 1080,
+    "hero": false,
+    "mobile": false
    },
    {
     "name": "v04",
     "dur": 11.3,
-    "w": 1280,
-    "h": 720,
-    "hero": false
+    "w": 1920,
+    "h": 1080,
+    "hero": false,
+    "mobile": false
    },
    {
     "name": "v05",
     "dur": 4,
-    "w": 1280,
-    "h": 720,
-    "hero": false
+    "w": 1920,
+    "h": 1080,
+    "hero": false,
+    "mobile": false
    },
    {
     "name": "v06",
     "dur": 4.8,
-    "w": 1280,
-    "h": 720,
-    "hero": false
+    "w": 1920,
+    "h": 1080,
+    "hero": false,
+    "mobile": false
    },
    {
     "name": "v07",
     "dur": 3.4,
-    "w": 1280,
-    "h": 720,
-    "hero": false
+    "w": 1920,
+    "h": 1080,
+    "hero": false,
+    "mobile": false
    },
    {
     "name": "v08",
     "dur": 6.8,
-    "w": 1280,
-    "h": 720,
-    "hero": false
+    "w": 1920,
+    "h": 1080,
+    "hero": false,
+    "mobile": false
    },
    {
     "name": "v09",
     "dur": 6.7,
-    "w": 1280,
-    "h": 720,
-    "hero": false
+    "w": 1920,
+    "h": 1080,
+    "hero": false,
+    "mobile": false
    },
    {
     "name": "v10",
     "dur": 5.9,
-    "w": 1280,
-    "h": 720,
-    "hero": false
+    "w": 1920,
+    "h": 1080,
+    "hero": false,
+    "mobile": false
    }
   ]
  }

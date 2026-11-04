@@ -24,12 +24,12 @@ export default function ProjectDetail() {
   return (
     <>
       <section className="pd-hero">
-        <InViewVideo video={project.videos[0]} className="pd-hero-video" label={`${project.title} film`} />
+        <InViewVideo fill video={project.videos[0]} className="pd-hero-video" label={`${project.title} film`} />
         <div className="pd-hero-shade" />
+        <motion.div className="container pd-back-wrap" initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.1, ease: EASE }}>
+          <Link to="/projects" className="pd-back"><ArrowLeft size={16} /> All projects</Link>
+        </motion.div>
         <div className="container pd-hero-copy">
-          <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.1, ease: EASE }}>
-            <Link to="/projects" className="pd-back"><ArrowLeft size={16} /> All projects</Link>
-          </motion.div>
           <motion.p className="pd-cat" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.3 }}>{project.category} · {project.location}</motion.p>
           <SplitHeading as="h1" immediate delay={0.2} text={project.title} className="pd-title" />
           <motion.p className="pd-scope" initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.6, duration: 0.8, ease: EASE }}>{project.scope}</motion.p>

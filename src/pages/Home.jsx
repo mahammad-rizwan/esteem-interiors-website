@@ -204,7 +204,7 @@ function FeaturedFilm() {
   return (
     <section className="featured-film" ref={ref}>
       <motion.div className="ff-frame" style={{ clipPath }}>
-        <InViewVideo video={project.videos[4]} className="ff-video" label="The Pizza Bakery, Koramangala film" />
+        <InViewVideo fill video={project.videos[4]} className="ff-video" label="The Pizza Bakery, Koramangala film" />
         <div className="ff-shade" />
         <motion.div className="container ff-copy" style={{ y: textY }}>
           <p className="ff-eyebrow"><span className="eyebrow-dot" /> Featured project</p>

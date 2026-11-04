@@ -45,7 +45,10 @@ const photo = (proj, p) => ({
   src: asset(`media/${proj}/${p.name}.webp`), md: asset(`media/${proj}/${p.name}-md.webp`), sm: asset(`media/${proj}/${p.name}-sm.webp`),
   w: p.w, h: p.h, landscape: p.landscape,
 });
-const video = (proj, v) => ({ src: asset(`media/${proj}/${v.name}.mp4`), poster: asset(`media/${proj}/${v.name}.webp`), dur: v.dur });
+const video = (proj, v) => ({
+  src: asset(`media/${proj}/${v.name}.mp4`), poster: asset(`media/${proj}/${v.name}.webp`), dur: v.dur,
+  mobile: v.mobile ? asset(`media/${proj}/${v.name}-m.mp4`) : null, mobilePoster: v.mobile ? asset(`media/${proj}/${v.name}-m.webp`) : null,
+});
 
 const PROJECT_META = [
   {

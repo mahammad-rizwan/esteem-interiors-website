@@ -5,6 +5,7 @@ import { ArrowUpRight } from 'lucide-react';
 import { HERO_CLIPS } from '../data/media.generated';
 import { PROJECTS } from '../data/site';
 import { SplitHeading, Button, EASE } from './ui';
+import { sourceFor } from './Media';
 
 const byMedia = Object.fromEntries(PROJECTS.map((p) => [p.media, p]));
 const CLIPS = HERO_CLIPS.map((c) => {
@@ -56,7 +57,7 @@ export default function HeroMontage() {
         <motion.div className="hero-media" style={{ scale: mediaScale }}>
           {CLIPS.map((c, i) => (
             <video key={c.src} ref={(el) => (vids.current[i] = el)} className={`hero-video ${i === idx ? 'on' : ''}`}
-              src={c.src} poster={c.poster} muted playsInline preload={i === idx || i === next ? 'auto' : 'none'}
+              src={sourceFor(c).src} poster={sourceFor(c).poster} muted playsInline preload={i === idx || i === next ? 'auto' : 'none'}
               onTimeUpdate={onTime(i)} onEnded={() => i === idx && go(next)} aria-hidden="true" />
           ))}
         </motion.div>

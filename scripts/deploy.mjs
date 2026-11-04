@@ -18,6 +18,6 @@ for (const route of ['about', 'projects', 'services', 'contact', ...PROJECT_IDS.
 }
 
 run('git add docs');
-try { run('git commit -m "Deploy site"'); } catch { console.log('No changes to deploy.'); }
+try { run('git commit -m "Deploy site" -m "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>"'); } catch { console.log('No changes to deploy.'); }
 run('git push origin HEAD:main');
 console.log(`Published → https://mahammad-rizwan.github.io/${REPO}/`);

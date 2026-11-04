@@ -37,6 +37,9 @@ export const PICKS = {
 // Clips used in the home hero (higher resolution), as [project, video number].
 export const HERO = [['pizza-koramangala', 1], ['hyundai-hesarghatta', 23], ['pizza-hsr', 26], ['hyundai-rajajinagar', 19], ['pizza-koramangala', 11], ['pizza-hsr', 21]];
 
+// Non-hero clips that also fill a phone screen (home featured film).
+export const FEATURED = [['pizza-koramangala', 17]];
+
 const run = (args) => execFileSync(FFMPEG, ['-v', 'error', '-y', ...args], { stdio: ['ignore', 'ignore', 'pipe'] });
 const manifest = {};
 for (const [proj, pick] of Object.entries(PICKS)) {
@@ -63,20 +66,27 @@ for (const [proj, pick] of Object.entries(PICKS)) {
     const v = videoIndex[proj].find((x) => x.n === n);
     const name = `v${String(i + 1).padStart(2, '0')}`;
     const hero = HERO.some(([p, k]) => p === proj && k === n);
-    const mp4 = path.join(dir, `${name}.mp4`);
-    if (!fs.existsSync(mp4)) {
-      run(['-i', v.file, '-an', '-vf', `scale='min(${hero ? 1920 : 1280},iw)':-2,fps=30`, '-c:v', 'libx264', '-preset', 'slow',
-        '-crf', hero ? '25' : '27', '-pix_fmt', 'yuv420p', '-movflags', '+faststart', mp4]);
-    }
-    const poster = path.join(dir, `${name}.webp`);
-    if (!fs.existsSync(poster)) {
-      const tmp = path.join(dir, `${name}.tmp.jpg`);
+    const mobile = hero || i === 0 || FEATURED.some(([p, k]) => p === proj && k === n);
+    const encode = (out, vf, crf) => run(['-i', v.file, '-an', '-vf', vf, '-c:v', 'libx264', '-preset', 'slow', '-crf', crf,
+      '-profile:v', 'high', '-pix_fmt', 'yuv420p', '-movflags', '+faststart', out]);
+    const poster = async (mp4, webp) => {
+      if (fs.existsSync(webp)) return;
+      const tmp = webp.replace('.webp', '.tmp.jpg');
       run(['-ss', '0.3', '-i', mp4, '-frames:v', '1', tmp]);
-      await sharp(tmp).webp({ quality: 74 }).toFile(poster);
+      await sharp(tmp).webp({ quality: 80 }).toFile(webp);
       fs.unlinkSync(tmp);
+    };
+    const mp4 = path.join(dir, `${name}.mp4`);
+    if (!fs.existsSync(mp4)) encode(mp4, 'scale=1920:-2:flags=lanczos,fps=30', hero ? '22' : '23');
+    await poster(mp4, path.join(dir, `${name}.webp`));
+    if (mobile) {
+      // Phones crop full-screen video hard, so cut a vertical 9:16 frame straight from the 4K source.
+      const mob = path.join(dir, `${name}-m.mp4`);
+      if (!fs.existsSync(mob)) encode(mob, 'crop=ih*9/16:ih,scale=1080:1920:flags=lanczos,fps=30', '23');
+      await poster(mob, path.join(dir, `${name}-m.webp`));
     }
-    const { width, height } = await sharp(poster).metadata();
-    manifest[proj].videos.push({ name, dur: v.dur, w: width, h: height, hero });
+    const { width, height } = await sharp(path.join(dir, `${name}.webp`)).metadata();
+    manifest[proj].videos.push({ name, dur: v.dur, w: width, h: height, hero, mobile });
   }
   console.log(proj, manifest[proj].photos.length, 'photos', manifest[proj].videos.length, 'videos');
 }
