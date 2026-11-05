@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Plus, ArrowUpRight, Play, Send, Check } from 'lucide-react';
-import { CLIENTS, PROCESS, FAQS, COMPANY, PROJECT_TYPES } from '../data/site';
+import { CLIENTS, PROCESS, FAQS, COMPANY, PROJECT_TYPES, WHATSAPP_URL } from '../data/site';
 import { Reveal, SplitHeading, Eyebrow, imgProps, EASE } from './ui';
 import { InViewVideo } from './Media';
 
@@ -55,12 +55,13 @@ const HOLD_MS = 220; // long enough that a scroll or tap never starts the video
 const MOVE_PX = 10;
 
 /* Project card with a video preview: hover with a mouse, press and hold on touch screens. */
-export function ProjectCard({ project, index = 0, large = false }) {
+export function ProjectCard({ project, index = 0, large = false, autoClip }) {
+  const auto = autoClip !== undefined;
   const [playing, setPlaying] = useState(false);
   const [ready, setReady] = useState(false);
   const touch = useRef({ timer: null, x: 0, y: 0, active: false, held: false });
   const cover = project.photos[0];
-  const clip = project.videos[0];
+  const clip = project.videos[auto ? autoClip : 0];
 
   const stop = () => {
     clearTimeout(touch.current.timer);
@@ -92,11 +93,15 @@ export function ProjectCard({ project, index = 0, large = false }) {
 
   return (
     <Reveal delay={(index % 2) * 0.12} className={`project-card ${large ? 'large' : ''}`}>
-      <Link to={`/projects/${project.id}`} {...handlers} aria-label={`${project.title}, ${project.location}`}>
+      <Link to={`/projects/${project.id}`} {...(auto ? {} : handlers)} aria-label={`${project.title}, ${project.location}`}>
         <div className="project-card-media">
-          <img {...imgProps(cover, large ? '(max-width: 900px) 100vw, 60vw' : '(max-width: 900px) 100vw, 40vw')} alt="" loading="lazy" />
-          {playing && clip && <video className={`project-card-video ${ready ? 'ready' : ''}`} src={clip.src} muted autoPlay loop playsInline onPlaying={() => setReady(true)} />}
-          <span className={`project-card-hold ${playing ? 'off' : ''}`}>Press &amp; hold to preview</span>
+          {auto ? <InViewVideo video={clip} className="project-card-video ready" label={`${project.title} film`} /> : (
+            <>
+              <img {...imgProps(cover, large ? '(max-width: 900px) 100vw, 60vw' : '(max-width: 900px) 100vw, 40vw')} alt="" loading="lazy" />
+              {playing && clip && <video className={`project-card-video ${ready ? 'ready' : ''}`} src={clip.src} muted autoPlay loop playsInline onPlaying={() => setReady(true)} />}
+              <span className={`project-card-hold ${playing ? 'off' : ''}`}>Press &amp; hold to preview</span>
+            </>
+          )}
           <span className="project-card-badge"><Play size={12} fill="currentColor" /> {project.photos.length} photos · {project.videos.length} films</span>
           <span className="project-card-arrow"><ArrowUpRight size={20} /></span>
         </div>
@@ -196,7 +201,7 @@ export function WhatsAppFab() {
     return () => window.removeEventListener('scroll', on);
   }, []);
   return (
-    <a className={`wa-fab ${show ? '' : 'hidden'}`} href={`https://wa.me/${COMPANY.whatsapp}`} target="_blank" rel="noreferrer" aria-label="Chat with us on WhatsApp">
+    <a className={`wa-fab ${show ? '' : 'hidden'}`} href={WHATSAPP_URL} target="_blank" rel="noreferrer" aria-label="Chat with us on WhatsApp">
       <svg viewBox="0 0 32 32" width="26" height="26" aria-hidden="true"><path fill="currentColor" d="M16 3a13 13 0 0 0-11.3 19.4L3 29l6.8-1.7A13 13 0 1 0 16 3zm0 23.6a10.6 10.6 0 0 1-5.4-1.5l-.4-.2-4 1 1.1-3.9-.3-.4A10.6 10.6 0 1 1 16 26.6zm5.8-7.9c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7.1a8.7 8.7 0 0 1-2.6-1.6 9.7 9.7 0 0 1-1.8-2.2c-.2-.3 0-.5.1-.7l.5-.6.3-.5a.6.6 0 0 0 0-.5l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6a1.2 1.2 0 0 0-.9.4 3.6 3.6 0 0 0-1.1 2.7 6.3 6.3 0 0 0 1.3 3.3 14.4 14.4 0 0 0 5.5 4.9c2 .8 2.4.7 2.9.6a2.9 2.9 0 0 0 1.9-1.3 2.4 2.4 0 0 0 .2-1.3c-.1-.2-.3-.3-.6-.4z" /></svg>
     </a>
   );

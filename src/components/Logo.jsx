@@ -1,10 +1,10 @@
 import { LOGO } from '../data/logo';
 
-export default function Logo({ icon = false, className = '' }) {
-  const w = icon ? LOGO.iconW : LOGO.w;
-  const h = icon ? LOGO.iconH : LOGO.h;
+// Vector logo. Colours follow the --lg-* variables of its surroundings; `full` adds the tagline.
+export default function Logo({ full = false, className = '' }) {
+  const g = full ? LOGO.full : LOGO.compact;
   return (
-    <svg className={`logo ${className}`} viewBox={`0 0 ${w} ${h}`} role="img" aria-label="Esteem Interiors & Consultants"
-      dangerouslySetInnerHTML={{ __html: icon ? LOGO.iconBody : LOGO.body }} />
+    <svg className={`logo ${className}`} viewBox={`0 0 ${g.w} ${g.h}`} role="img" aria-label="Esteem Interior Consultants"
+      dangerouslySetInnerHTML={{ __html: g.body }} />
   );
 }

@@ -44,15 +44,15 @@ export default function About() {
     <>
       <PageHeader eyebrow="About us" title="Three decades of building *trust.*"
         lead="A Bengaluru design-and-build firm. We plan, design, construct and furnish spaces, and stand behind every one of them."
-        photo={P['pizza-bakery-koramangala'].photos[15]} />
+        photo={P['pizza-bakery-hsr'].photos[8]} />
 
       <section className="section story">
         <div className="container story-grid">
-          <SectionHead eyebrow="Our story" title="From one workshop to *350+ projects.*" />
+          <SectionHead eyebrow="Our story" title="Thirty years, *350+ projects,* one standard." />
           <div className="story-copy">
-            <Reveal><p>Founded in 1996 and headquartered in Bengaluru, Esteem Interiors &amp; Consultants has completed more than 350 residential and commercial projects across South India. Our reputation rests on trust, technical expertise and a strong commitment to quality.</p></Reveal>
-            <Reveal delay={0.1}><p>We bring architects, designers, engineers, site supervisors and craftsmen together in one team. Our own factory manufactures custom interiors and furniture, which means better control over finish, fit and timelines, and fewer surprises for our clients.</p></Reveal>
-            <Reveal delay={0.2}><p>Today we design and build automotive showrooms, restaurants and cafés, retail stores, corporate offices and private homes, for families and for some of the best-known brands in the country.</p></Reveal>
+            <Reveal><p>Esteem Interiors &amp; Consultants began in Bengaluru in 1996 with a simple promise: build every space as carefully as if it were our own. Three decades and more than 350 residential and commercial projects across South India later, that promise still guides how we work.</p></Reveal>
+            <Reveal delay={0.1}><p>Design, engineering, site supervision and craftsmanship all sit within one team, so nothing gets lost between the drawing board and the finished room. Our own factory makes custom interiors and furniture in-house, giving us direct control over finish, fit and timelines, and giving our clients fewer surprises along the way.</p></Reveal>
+            <Reveal delay={0.2}><p>Today we design and build automotive showrooms, restaurants and cafés, retail stores, corporate offices and private homes. Whether it is a family's first apartment or a flagship store for a national brand, every project gets the same attention to detail, honest advice and on-time handover.</p></Reveal>
           </div>
         </div>
         <div className="container about-stats">

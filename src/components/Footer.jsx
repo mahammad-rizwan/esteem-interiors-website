@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { ArrowUpRight } from 'lucide-react';
 import Logo from './Logo';
-import { COMPANY, NAV, SERVICES, SOCIALS } from '../data/site';
+import { COMPANY, NAV, SERVICES, SOCIALS, WHATSAPP_URL } from '../data/site';
 import { SOCIAL_ICON } from './SocialIcons';
 import { Reveal, SplitHeading, Button } from './ui';
 
@@ -13,14 +13,14 @@ export default function Footer() {
           <SplitHeading text="Have a space in mind? *Let's talk.*" className="footer-title" />
           <Reveal delay={0.2} className="footer-cta-actions">
             <Button to="/contact" variant="light">Book a free consultation</Button>
-            <Button href={`https://wa.me/${COMPANY.whatsapp}`} variant="outline-light" target="_blank" rel="noreferrer">WhatsApp us</Button>
+            <Button href={WHATSAPP_URL} variant="outline-light" target="_blank" rel="noreferrer">WhatsApp us</Button>
           </Reveal>
         </div>
 
         <div className="footer-grid">
           <div className="footer-brand">
-            <Logo />
-            <p>{COMPANY.tagline}<br />Interiors, construction and consulting in Bengaluru since 1996.</p>
+            <Logo full />
+            <p>Interiors, construction and consulting in Bengaluru since 1996.</p>
             <div className="socials">
               {SOCIALS.map((s) => { const I = SOCIAL_ICON[s.id]; return <a key={s.id} href={s.href} target="_blank" rel="noreferrer" aria-label={s.label}><I /></a>; })}
             </div>
@@ -46,7 +46,6 @@ export default function Footer() {
           <span>Crafted in Bengaluru · Since 1996</span>
         </div>
       </div>
-      <div className="footer-wordmark" aria-hidden="true">esteem</div>
     </footer>
   );
 }

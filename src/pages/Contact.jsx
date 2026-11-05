@@ -3,7 +3,7 @@ import { Phone, Mail, MapPin, ArrowUpRight, Copy, Check, Navigation } from 'luci
 import { PageHeader, ConsultForm } from '../components/Blocks';
 import { Reveal, SectionHead, Eyebrow, SplitHeading } from '../components/ui';
 import { SOCIAL_ICON, WhatsappIcon } from '../components/SocialIcons';
-import { COMPANY, SOCIALS } from '../data/site';
+import { COMPANY, SOCIALS, WHATSAPP_URL } from '../data/site';
 
 function CopyButton({ text }) {
   const [ok, setOk] = useState(false);
@@ -17,7 +17,7 @@ function CopyButton({ text }) {
 export default function Contact() {
   const cards = [
     { icon: Phone, label: 'Call us', value: COMPANY.phone, href: COMPANY.phoneHref, copy: COMPANY.phone },
-    { icon: WhatsappIcon, label: 'WhatsApp', value: COMPANY.whatsappDisplay, href: `https://wa.me/${COMPANY.whatsapp}`, external: true },
+    { icon: WhatsappIcon, label: 'WhatsApp', value: COMPANY.whatsappDisplay, href: WHATSAPP_URL, external: true },
     { icon: Mail, label: 'Email', value: COMPANY.email, href: `mailto:${COMPANY.email}`, copy: COMPANY.email },
     { icon: MapPin, label: 'Visit our office', value: `${COMPANY.address[0]}, ${COMPANY.address[1]}`, href: COMPANY.mapsLink, external: true },
   ];

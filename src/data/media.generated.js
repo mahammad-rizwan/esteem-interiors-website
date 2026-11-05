@@ -368,7 +368,7 @@ export const MEDIA = {
     "w": 1920,
     "h": 1080,
     "hero": false,
-    "mobile": true
+    "mobile": false
    },
    {
     "name": "v06",
@@ -400,7 +400,7 @@ export const MEDIA = {
     "w": 1920,
     "h": 1080,
     "hero": false,
-    "mobile": false
+    "mobile": true
    },
    {
     "name": "v10",
@@ -929,4 +929,4 @@ export const MEDIA = {
   ]
  }
 };
-export const HERO_CLIPS = [{"proj":"pizza-koramangala","name":"v01"},{"proj":"hyundai-hesarghatta","name":"v01"},{"proj":"pizza-hsr","name":"v01"},{"proj":"hyundai-rajajinagar","name":"v01"},{"proj":"pizza-koramangala","name":"v04"},{"proj":"pizza-hsr","name":"v08"}];
+export const HERO_CLIPS = [{"proj":"pizza-koramangala","name":"v01"},{"proj":"hyundai-hesarghatta","name":"v01"},{"proj":"pizza-hsr","name":"v08"},{"proj":"hyundai-rajajinagar","name":"v01"},{"proj":"pizza-koramangala","name":"v04"},{"proj":"pizza-hsr","name":"v01"}];

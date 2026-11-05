@@ -19,10 +19,12 @@ export const COMPANY = {
   mapsEmbed: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.5!2d77.581497!3d12.9547443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae15002a5eeda7%3A0x16253d3a0ee996b3!2sEsteem%20Interiors%20%26%20Consultant!5e0!3m2!1sen!2sin!4v1761500000000!5m2!1sen!2sin',
 };
 
+export const WHATSAPP_MESSAGE = "Hi Esteem Interiors, I'm interested in your interior design and construction services. Could you please share more details?";
+export const WHATSAPP_URL = `https://wa.me/${COMPANY.whatsapp}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`;
+
 export const SOCIALS = [
   { id: 'instagram', label: 'Instagram', handle: '@esteem.constructions', href: 'https://www.instagram.com/esteem.constructions' },
-  { id: 'youtube', label: 'YouTube', handle: '@esteem.constructions', href: 'https://www.youtube.com/@esteem.constructions' },
-  { id: 'whatsapp', label: 'WhatsApp', handle: COMPANY.whatsappDisplay, href: `https://wa.me/${COMPANY.whatsapp}` },
+  { id: 'whatsapp', label: 'WhatsApp', handle: COMPANY.whatsappDisplay, href: WHATSAPP_URL },
 ];
 
 export const NAV = [
@@ -105,8 +107,8 @@ export const SERVICES = [
   {
     id: 'residential', title: 'Residential Interiors', icon: 'Home',
     short: 'Apartments, villas and independent homes with a personal touch.',
-    body: 'From 2 and 3 BHK apartments to villas, we design and deliver complete homes: modular kitchens, wardrobes, living spaces and bedrooms, with furniture made to measure in our own factory.',
-    points: ['2 BHK, 3 BHK & villas', 'Modular kitchens & wardrobes', 'Custom furniture', 'False ceilings, lighting & finishes'],
+    body: 'From apartments to villas, we design and deliver complete homes: modular kitchens, wardrobes, living spaces and bedrooms, with furniture made to measure in our own factory.',
+    points: ['Apartments & villas', 'Modular kitchens & wardrobes', 'Custom furniture', 'False ceilings, lighting & finishes'],
     image: P['blue-hyundai-rajajinagar'].photos[6],
   },
   {
@@ -171,4 +173,4 @@ export const FAQS = [
   { q: 'How is pricing structured?', a: 'Pricing depends on scope, material specifications and complexity. Our proposals itemise all major costs.' },
 ];
 
-export const PROJECT_TYPES = ['2 BHK', '3 BHK', 'Villa', 'Office', 'Showroom', 'Restaurant / Café', 'Retail', 'Renovation'];
+export const PROJECT_TYPES = ['Apartment', 'Villa', 'Office', 'Showroom', 'Restaurant / Café', 'Retail', 'Renovation'];

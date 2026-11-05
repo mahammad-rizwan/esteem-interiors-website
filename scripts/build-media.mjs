@@ -35,10 +35,10 @@ export const PICKS = {
   },
 };
 // Clips used in the home hero (higher resolution), as [project, video number].
-export const HERO = [['pizza-koramangala', 1], ['hyundai-hesarghatta', 23], ['pizza-hsr', 26], ['hyundai-rajajinagar', 19], ['pizza-koramangala', 11], ['pizza-hsr', 21]];
+export const HERO = [['pizza-koramangala', 1], ['hyundai-hesarghatta', 23], ['pizza-hsr', 21], ['hyundai-rajajinagar', 19], ['pizza-koramangala', 11], ['pizza-hsr', 26]];
 
 // Non-hero clips that also fill a phone screen (home featured film).
-export const FEATURED = [['pizza-koramangala', 17]];
+export const FEATURED = [['pizza-koramangala', 33]];
 
 const run = (args) => execFileSync(FFMPEG, ['-v', 'error', '-y', ...args], { stdio: ['ignore', 'ignore', 'pipe'] });
 const manifest = {};

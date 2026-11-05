@@ -1,42 +1,70 @@
 import { useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { motion, useScroll, useTransform, useMotionValue, useSpring, AnimatePresence } from 'framer-motion';
-import { ArrowUpRight, PenTool, Home as HomeIcon, Building2, KeyRound, HardHat, Compass } from 'lucide-react';
+import { motion, useScroll, useTransform, useMotionValue, useSpring, useReducedMotion, AnimatePresence } from 'framer-motion';
+import { ArrowUpRight, PenTool, Home as HomeIcon, Building2, KeyRound, HardHat, Compass, Factory } from 'lucide-react';
 import HeroMontage from '../components/HeroMontage';
 import { ClientMarquee, ProjectCard, ProcessSteps } from '../components/Blocks';
 import { InViewVideo } from '../components/Media';
 import { Reveal, SectionHead, SplitHeading, Counter, Button, Eyebrow, imgProps } from '../components/ui';
-import { PROJECTS, SERVICES, STATS, WHY, COMPANY, asset } from '../data/site';
+import { PROJECTS, SERVICES, STATS, WHY } from '../data/site';
 
 export const ICONS = { PenTool, Home: HomeIcon, Building2, KeyRound, HardHat, Compass };
 const P = Object.fromEntries(PROJECTS.map((p) => [p.id, p]));
+// Home project cards always play. These two projects open on Mona Lisa footage, so they use other films.
+const HOME_CLIP = { 'pizza-bakery-hsr': 3, 'pizza-bakery-koramangala': 6 };
+
+const STATEMENT = 'We design and build spaces people love to live, work and gather in, with *care* in every detail.'.split(' ');
+const PILLARS = [
+  { icon: PenTool, title: 'Design', text: 'Layouts, materials and 3D views, shaped around how you will use the space.' },
+  { icon: HardHat, title: 'Build', text: 'Civil work, finishes and site supervision by one accountable team.' },
+  { icon: Factory, title: 'Craft', text: 'Custom joinery and furniture made in our own factory.' },
+];
+
+function LitWord({ word, range, progress }) {
+  const opacity = useTransform(progress, range, [0.16, 1]);
+  const em = word.startsWith('*');
+  const text = word.replace(/\*/g, '');
+  return <><motion.span className={em ? 'lit-word em' : 'lit-word'} style={{ opacity }}>{text}</motion.span>{' '}</>;
+}
+
+/* The sentence lights up word by word as it scrolls through the screen. */
+function Statement() {
+  const ref = useRef(null);
+  const reduce = useReducedMotion();
+  const { scrollYProgress } = useScroll({ target: ref, offset: ['start 88%', 'end 58%'] });
+  const n = STATEMENT.length;
+  return (
+    <p className="intro-statement" ref={ref}>
+      {STATEMENT.map((w, i) => (reduce
+        ? <span key={i} className={w.startsWith('*') ? 'lit-word em' : 'lit-word'}>{w.replace(/\*/g, '')} </span>
+        : <LitWord key={i} word={w} progress={scrollYProgress} range={[i / n, Math.min(1, (i + 1.5) / n)]} />))}
+    </p>
+  );
+}
 
 function Intro() {
-  const inline = [P['pizza-bakery-hsr'].photos[12], P['blue-hyundai-hesarghatta'].photos[3], P['pizza-bakery-koramangala'].photos[5]];
   return (
     <section className="section intro" id="intro">
       <div className="container">
         <Reveal><Eyebrow>Since 1996</Eyebrow></Reveal>
-        <Reveal as="p" className="intro-statement" y={40}>
-          We design and build spaces
-          <span className="inline-pic"><img src={inline[0].sm} alt="" /></span>
-          people love to live, work
-          <span className="inline-pic"><img src={inline[1].sm} alt="" /></span>
-          and gather in, with <em>care</em> in every detail
-          <span className="inline-pic"><img src={inline[2].sm} alt="" /></span>
-        </Reveal>
+        <Statement />
         <div className="intro-grid">
-          <Reveal className="intro-text" delay={0.1}>
-            <p>Esteem Interiors &amp; Consultants is a Bengaluru-based interior design, construction and consulting firm. For three decades we have delivered homes, showrooms, restaurants, retail stores and offices across South India, with our own factory for custom joinery and furniture.</p>
+          <Reveal className="intro-text">
+            <p>Esteem Interiors &amp; Consultants is a Bengaluru-based interior design, construction and consulting firm. One team takes your project from the first sketch to the final handover, backed by our own factory for custom joinery and furniture, so quality, fit and timelines stay in our hands.</p>
             <Button to="/about" variant="outline">Our story</Button>
           </Reveal>
-          <Reveal className="founder-chip" delay={0.2}>
-            <img src={asset('founder.webp')} alt={`${COMPANY.founder}, founder`} loading="lazy" />
-            <div>
-              <span className="founder-chip-name">{COMPANY.founder}</span>
-              <span className="founder-chip-role">Founder</span>
-            </div>
-          </Reveal>
+          <div className="pillars">
+            {PILLARS.map((p, i) => {
+              const I = p.icon;
+              return (
+                <Reveal key={p.title} delay={i * 0.1} className="pillar">
+                  <span className="pillar-icon"><I size={22} strokeWidth={1.5} /></span>
+                  <h3>{p.title}</h3>
+                  <p>{p.text}</p>
+                </Reveal>
+              );
+            })}
+          </div>
         </div>
       </div>
     </section>
@@ -106,21 +134,22 @@ function Reel() {
     [P['pizza-bakery-hsr'], 1], [P['blue-hyundai-rajajinagar'], 1], [P['pizza-bakery-koramangala'], 2], [P['blue-hyundai-hesarghatta'], 4],
     [P['pizza-bakery-hsr'], 4], [P['pizza-bakery-koramangala'], 5], [P['blue-hyundai-rajajinagar'], 4], [P['blue-hyundai-service'], 0],
   ];
-  const ref = useRef(null);
   return (
     <section className="section reel">
       <div className="container">
-        <SectionHead eyebrow="In motion" title="Walk through our *spaces.*" lead="Short films straight from site. Tap any clip to explore the full project." />
+        <SectionHead eyebrow="In motion" title="Walk through our *spaces.*" lead="Short films straight from site. Tap any film to explore the full project." />
       </div>
-      <div className="reel-scroller" ref={ref}>
-        {clips.map(([p, k], i) => (
-          <Reveal key={i} delay={(i % 4) * 0.08} className="reel-item">
-            <Link to={`/projects/${p.id}`} aria-label={`${p.title}, ${p.location}`}>
-              <InViewVideo video={p.videos[k]} className="reel-video" label={`${p.title} film`} />
-              <span className="reel-caption"><b>{p.title}</b>{p.location.split(',')[0]}</span>
-            </Link>
-          </Reveal>
-        ))}
+      <div className="reel-scroller">
+        <div className="reel-track">
+          {[...clips, ...clips].map(([p, k], i) => (
+            <div key={i} className="reel-item" aria-hidden={i >= clips.length}>
+              <Link to={`/projects/${p.id}`} aria-label={`${p.title}, ${p.location}`} tabIndex={i >= clips.length ? -1 : undefined}>
+                <InViewVideo video={p.videos[k]} className="reel-video" label={`${p.title} film`} />
+                <span className="reel-caption"><b>{p.title}</b>{p.location.split(',')[0]}</span>
+              </Link>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
@@ -173,7 +202,7 @@ function MotionGallery() {
   const { scrollYProgress } = useScroll({ target: ref, offset: ['start end', 'end start'] });
   const x1 = useTransform(scrollYProgress, [0, 1], ['2%', '-38%']);
   const x2 = useTransform(scrollYProgress, [0, 1], ['-38%', '2%']);
-  const rowA = [P['pizza-bakery-hsr'].photos[0], P['blue-hyundai-hesarghatta'].photos[0], P['pizza-bakery-koramangala'].photos[1], P['pizza-bakery-hsr'].photos[12], P['blue-hyundai-rajajinagar'].photos[0], P['pizza-bakery-koramangala'].photos[16], P['pizza-bakery-hsr'].photos[8]];
+  const rowA = [P['pizza-bakery-hsr'].photos[7], P['blue-hyundai-hesarghatta'].photos[0], P['pizza-bakery-koramangala'].photos[1], P['pizza-bakery-hsr'].photos[12], P['blue-hyundai-rajajinagar'].photos[0], P['pizza-bakery-koramangala'].photos[16], P['pizza-bakery-hsr'].photos[8]];
   const rowB = [P['pizza-bakery-koramangala'].photos[15], P['blue-hyundai-rajajinagar'].photos[6], P['pizza-bakery-hsr'].photos[4], P['blue-hyundai-hesarghatta'].photos[11], P['pizza-bakery-koramangala'].photos[8], P['blue-hyundai-service'].photos[6], P['pizza-bakery-hsr'].photos[17]];
   return (
     <section className="motion-gallery" ref={ref} aria-label="Project photographs">
@@ -204,12 +233,12 @@ function FeaturedFilm() {
   return (
     <section className="featured-film" ref={ref}>
       <motion.div className="ff-frame" style={{ clipPath }}>
-        <InViewVideo fill video={project.videos[4]} className="ff-video" label="The Pizza Bakery, Koramangala film" />
+        <InViewVideo fill video={project.videos[8]} className="ff-video" label="Restaurant interiors film" />
         <div className="ff-shade" />
         <motion.div className="container ff-copy" style={{ y: textY }}>
           <p className="ff-eyebrow"><span className="eyebrow-dot" /> Featured project</p>
-          <h2 className="ff-title">{project.title}<em>{project.location.split(',')[0]}</em></h2>
-          <p className="ff-text">{project.summary}</p>
+          <h2 className="ff-title">Restaurant<em>interiors</em></h2>
+          <p className="ff-text">A double-height dining hall under a clay-tile roof, with hand-finished arches, a live show kitchen, hand-drawn city murals and a leafy terrace overlooking the street. Designed, built and finished by our own team.</p>
           <Button to={`/projects/${project.id}`} variant="light">See the project</Button>
         </motion.div>
       </motion.div>
@@ -240,7 +269,7 @@ export default function Home() {
             <Reveal delay={0.1}><Button to="/projects" variant="outline">View all projects</Button></Reveal>
           </div>
           <div className="project-grid">
-            {PROJECTS.map((p, i) => <ProjectCard key={p.id} project={p} index={i} large={i === 0} />)}
+            {PROJECTS.map((p, i) => <ProjectCard key={p.id} project={p} index={i} large={i === 0} autoClip={HOME_CLIP[p.id] ?? 0} />)}
           </div>
         </div>
       </section>
